@@ -40,18 +40,30 @@
 
 #Amstrong number
 
-num=int(input("enter the number:"))
+# num=int(input("enter the number:"))
 
-orignal= num
-power= len(str(num))
+# orignal= num
+# power= len(str(num))
 
-total=0
+# total=0
 
-while num>0:
-    digit= num%10
-    total += digit**power
-    num//=10
-if total == orignal:
-    print("Amstrong Number")
+# while num>0:
+#     digit= num%10
+#     total += digit**power
+#     num//=10
+# if total == orignal:
+#     print("Amstrong Number")
+# else:
+#     print("Not an amstrong")
+
+
+# Factorial number
+
+num=int(input("enter a number:"))
+fact=1
+if num<0:
+    print("Factorial not define")
 else:
-    print("Not an amstrong")
+    for i in range(1, num+1):
+        fact= fact*i
+    print("Factorial", fact)
