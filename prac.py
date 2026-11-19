@@ -24,16 +24,34 @@
 
 # Palindrome number
 
+# num=int(input("enter the number:"))
+# orignal=num
+# reverse=0
+
+# while num >0:
+#     digit = num%10
+#     reverse= reverse*10+digit
+#     num= num//10
+# if orignal == reverse:
+#    print("Palindrome")
+# else:
+#     print("Not palindrome")
+
+
+#Amstrong number
+
 num=int(input("enter the number:"))
-orignal=num
-reverse=0
 
-while num >0:
-    digit = num%10
-    reverse= reverse*10+digit
-    num= num//10
-if orignal == reverse:
-   print("Palindrome")
+orignal= num
+power= len(str(num))
+
+total=0
+
+while num>0:
+    digit= num%10
+    total += digit**power
+    num//=10
+if total == orignal:
+    print("Amstrong Number")
 else:
-    print("Not palindrome")
-
+    print("Not an amstrong")
