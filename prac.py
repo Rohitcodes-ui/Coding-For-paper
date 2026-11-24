@@ -70,18 +70,7 @@
 
 #fibonaxi series
 
-n = int(input("enter number of terms:"))
-
-a = 0
-b = 1
-
-for i in range(n):
-    print(a, end=" ")
-
-    a, b = b ,a + b
-
-
-# n = int(input("Enter number of terms: "))
+# n = int(input("enter number of terms:"))
 
 # a = 0
 # b = 1
@@ -89,4 +78,16 @@ for i in range(n):
 # for i in range(n):
 #     print(a, end=" ")
 
-#     a, b = b, a + b
+#     a, b = b ,a + b
+
+#Resverse number
+
+num = int(input("Enter the number:"))
+
+reverse = 0
+
+while num>0:
+    digit=num%10
+    reverse = reverse *10 + digit
+    num = num//10
+print("reverse",reverse) 
