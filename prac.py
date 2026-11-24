@@ -59,11 +59,34 @@
 
 # Factorial number
 
-num=int(input("enter a number:"))
-fact=1
-if num<0:
-    print("Factorial not define")
-else:
-    for i in range(1, num+1):
-        fact= fact*i
-    print("Factorial", fact)
+# num=int(input("enter a number:"))
+# fact=1
+# if num<0:
+#     print("Factorial not define")
+# else:
+#     for i in range(1, num+1):
+#         fact= fact*i
+#     print("Factorial", fact)
+
+#fibonaxi series
+
+n = int(input("enter number of terms:"))
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+
+    a, b = b ,a + b
+
+
+# n = int(input("Enter number of terms: "))
+
+# a = 0
+# b = 1
+
+# for i in range(n):
+#     print(a, end=" ")
+
+#     a, b = b, a + b
