@@ -82,12 +82,23 @@
 
 #Resverse number
 
-num = int(input("Enter the number:"))
+# num = int(input("Enter the number:"))
 
-reverse = 0
+# reverse = 0
 
+# while num>0:
+#     digit=num%10
+#     reverse = reverse *10 + digit
+#     num = num//10
+# print("reverse",reverse) 
+
+#Add number
+
+num=int(input("enter the number:"))
+
+total =0
 while num>0:
     digit=num%10
-    reverse = reverse *10 + digit
-    num = num//10
-print("reverse",reverse) 
+    total+=digit
+    num =num//10
+print("sum:",total)
